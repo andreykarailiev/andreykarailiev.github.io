@@ -1,0 +1,23 @@
+// Colors
+$primary:   #39270f;
+$secondary: #f8efdb;
+$success:   #28a745;
+$info:      #17a2b8;
+$warning:   #ffc107;
+$danger:    #dc3545;
+$light:     #f8efdb;
+$dark:      #39270f;
+
+// Fonts
+@font-face {
+  font-family: "Nanum Myeongjo";
+  src: url("../assets/fonts/NanumMyeongjo-Regular.ttf");
+}
+
+$font-family-base: "Nanum Myeongjo";
+$font-family-heading: "Nanum Myeongjo";
+
+$text-black: #39270f;
+$text-white: #f8efdb;
+
+$rounded-borders: 15px;

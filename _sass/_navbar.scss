@@ -1,0 +1,52 @@
+.link-after {
+  content: "";
+  display: block;
+  height: 0.15em;
+  @include themed(background, $primary, #ffffff);
+}
+
+.main-menu {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+  margin-right: 40px;
+  > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    > li {
+      list-style: none;
+      font-size: 1rem;
+      > a {
+        padding: 0px 12px 0px 12px;
+        display: inline-block;
+        font-weight: normal;
+        text-decoration: none;
+	@include themed(color, $text-black, $text-white);
+        &::after {
+    		@extend .link-after;
+    		width: 0;
+    		transition: width 0.35s;
+  	}
+
+  	&:hover::after {
+    		width: 100%;
+  	}
+      }
+      &.active {
+        > a {
+            font-weight: bold;
+		&::after {
+		@extend .link-after;
+		width: 100% !important;
+  }
+          &:hover {
+            text-decoration: none;
+            transition: all 225ms ease-in 0s;
+          }
+        }
+      }
+    }
+  }
+}
