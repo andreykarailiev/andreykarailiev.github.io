@@ -1,0 +1,75 @@
+### Site Settings ###
+title               : Andrey Karailiev
+description         : >-
+                      This is some dummy text to show up on the starting page.
+open_new_tab        : true
+
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/index.md
+
+
+### Author Info ###
+author:
+  name              : Andrey Karailiev
+#  image             : https://i.imgur.com/uyDNQnn.jpg
+# behance           : your_username
+# dribbble          : your_username
+  email             : andreykarailiev@gmail.com
+# facebook          : your_username
+# github            : your_username
+# gitlab            : your_username
+# instagram         : your_username
+# kaggle            : your_username
+  linkedin          : your_username
+  medium            : your_username
+  twitter           : your_username
+
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+
+### Disqus ###
+disqus:
+  shortname: your-short-name-disqus                     # Your website Shortname on disqus
+
+
+### Analytics ###
+analytics:
+  enabled: false                                        # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false                                   # Set to true to enable disqus comments
+
+
+### Exclude from processing ###
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+  - "*.log"
