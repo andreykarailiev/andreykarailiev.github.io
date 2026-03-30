@@ -320,6 +320,7 @@ body {
 .hamburger {
   outline: none;
   margin-left: 40px;
+  margin-right: calc(40px - 15px);
   z-index: 101;
   cursor: pointer;
 }
