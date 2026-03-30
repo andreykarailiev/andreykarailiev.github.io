@@ -1,9 +1,12 @@
 .header {
   color: $primary;
   display: flex;
-  .container {
+  .container,
+  .container-fluid {
     display: flex;
     justify-content: space-between;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   &.header-absolute {
     position: absolute;
@@ -16,8 +19,8 @@
   display: none;
   @include media-breakpoint-up(md) {
     display: block;
-    margin-left: 40px;
-  }  
+    margin-left: $side-margin;
+  }
   a {
     display: block;
     width: 100%;
@@ -32,7 +35,7 @@
   @include media-breakpoint-up(md) {
     display: none;
   }
-  margin-left: 40px;
+  margin-left: $side-margin;
   a {
     display: block;
     width: 100%;

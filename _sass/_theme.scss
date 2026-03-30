@@ -1,21 +1,7 @@
-@mixin themed($property, $light-value, $dark-value) {
-  [data-theme="light"] & {
-    #{$property}: $light-value;
-  }
-
-  [data-theme="dark"] & {
-    #{$property}: $dark-value;
-  }
-}
-
-#theme-toggler:before {
-  @include themed(content, "🌙", "🌞");
-}
-
 .text-themed {
-  @include themed(color, $text-black, $text-white);
+  color: $text-black;
 }
 
 .bg-themed {
-  @include themed(background-color, $light, $dark);
+  background-color: $light;
 }

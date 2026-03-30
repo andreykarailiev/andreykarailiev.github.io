@@ -2,7 +2,7 @@
   content: "";
   display: block;
   height: 0.15em;
-  @include themed(background, $primary, #ffffff);
+  background: $primary;
 }
 
 .main-menu {
@@ -19,18 +19,19 @@
       list-style: none;
       font-size: 1rem;
       > a {
-        padding: 0px 12px 0px 12px;
+        padding: 0 12px;
         display: inline-block;
         font-weight: normal;
         text-decoration: none;
-	@include themed(color, $text-black, $text-white);
+	color: $text-black;
         &::after {
     		@extend .link-after;
     		width: 0;
     		transition: width 0.35s;
   	}
 
-  	&:hover::after {
+  	&:hover::after,
+  	&:focus::after {
     		width: 100%;
   	}
       }
@@ -43,7 +44,7 @@
   }
           &:hover {
             text-decoration: none;
-            transition: all 225ms ease-in 0s;
+            transition: all 0.35s ease;
           }
         }
       }

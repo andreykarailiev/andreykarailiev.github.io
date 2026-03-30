@@ -1,5 +1,19 @@
+$side-margin: 40px;
+
 body {
   font-family: $font-family-base;
+}
+
+.page-content {
+  padding-left: $side-margin;
+  padding-right: $side-margin;
+
+  // 768px+: fixed at 83.33% width, centered
+  @media (min-width: 768px) {
+    width: 83.33%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .bg-light,

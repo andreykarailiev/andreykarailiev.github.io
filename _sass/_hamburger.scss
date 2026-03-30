@@ -1,7 +1,7 @@
 .hamburger {
   outline: none;
   margin-left: 40px;
-  z-index: 30;
+  z-index: 101;
   cursor: pointer;
   @include media-breakpoint-up(md) {
     display: none;
@@ -12,7 +12,7 @@
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
-    @include themed(background, $primary, #ffffff);
+    background: $primary;
   }
   .hamburger-inner::after {
     width: 18px;

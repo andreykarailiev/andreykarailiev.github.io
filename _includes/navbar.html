@@ -28,7 +28,7 @@
   <ul>
     {% for html_page in filtered_pages %}  
 
-      {%- if page.url contains html_page.url -%}
+      {%- if page.url == html_page.url -%}
         {%- assign active_status = "active" -%}
       {%- else -%}
         {%- assign active_status = "" -%}
@@ -44,8 +44,5 @@
         <a href="{{ url }}" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>{{ html_page.title | downcase}}</a>
       </li>
     {% endfor %}
-      <li>
-        <span id="theme-toggler" role="button" onclick="toggleTheme()"></span>
-      </li>
   </ul>
 </div>
